@@ -171,7 +171,7 @@ const Layout = ({ children }: LayoutProps) => {
               <h3 className="text-sm font-semibold text-foreground mb-3">Links</h3>
               <div className="space-y-2">
                 <a 
-                  href="https://github.com/yourusername/eliza-repro-hypothesis"
+                  href="https://github.com/arpit15006/RePro-Agent-with-Eliza-plugins.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -195,7 +195,7 @@ const Layout = ({ children }: LayoutProps) => {
           
           <div className="border-t border-border mt-8 pt-6 text-center">
             <p className="text-sm text-muted-foreground">
-              © 2024 RePRO-Agent. Built for the BioXAI Hackathon Scientific Outcomes Track.
+               2025 RePRO-Agent. Built for the BioXAI Hackathon Scientific Outcomes Track. Built with ❤️ by Arpit Patel
             </p>
           </div>
         </div>
