@@ -1,0 +1,56 @@
+name: "knowledge-graph-builder"
+description: "Builds semantic knowledge graphs from scientific metadata and reproducibility reports using RDF"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "knowledge-management"
+
+dependencies:
+  - "rdflib>=6.0.0"
+  - "json"
+  - "logging"
+  - "pathlib"
+  - "urllib.parse"
+
+inputs:
+  - name: "metadata_file"
+    type: "file"
+    description: "JSON metadata file from manuscript extractor"
+    required: false
+  - name: "reproducibility_file"
+    type: "file"
+    description: "JSON reproducibility report"
+    required: false
+  - name: "output_format"
+    type: "string"
+    description: "Output format (turtle, json-ld, xml)"
+    default: "turtle"
+    required: false
+
+outputs:
+  - name: "knowledge_graph"
+    type: "file"
+    description: "RDF knowledge graph in specified format"
+  - name: "graph_statistics"
+    type: "json"
+    description: "Statistics about the generated graph"
+  - name: "triples_data"
+    type: "json"
+    description: "Graph data as subject-predicate-object triples"
+
+capabilities:
+  - "RDF triple generation"
+  - "JSON-LD processing"
+  - "Semantic relationship mapping"
+  - "Multiple output formats"
+  - "Graph statistics"
+
+usage_example: |
+  python main.py --metadata metadata.json --reproducibility report.json --output graph.ttl --format turtle
+
+tags:
+  - "knowledge-graphs"
+  - "rdf"
+  - "semantic-web"
+  - "data-integration"

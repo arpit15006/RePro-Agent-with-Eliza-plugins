@@ -1,0 +1,25 @@
+@prefix repro: <https://reproducibility.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix scientific: <https://scientific.org/> .
+@prefix tool: <https://tools.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://repo.org/https___github_com_arpit15006_monad-pingpong-arena> a schema:SoftwareSourceCode ;
+    repro:hasReadme true ;
+    repro:hasRecommendation [ a repro:Recommendation ;
+            schema:description "Add a license file to clarify usage rights" ],
+        [ a repro:Recommendation ;
+            schema:description "Add unit tests to verify code functionality" ],
+        [ a repro:Recommendation ;
+            schema:description "Include sample data or clear instructions for data acquisition" ],
+        [ a repro:Recommendation ;
+            schema:description "Set up continuous integration for automated testing" ],
+        [ a repro:Recommendation ;
+            schema:description "Consider adding Docker support for consistent environments" ] ;
+    repro:reproducibilityScore "0.2"^^xsd:float ;
+    schema:codeRepository "https://github.com/arpit15006/Monad-PingPong-Arena" ;
+    scientific:usesTool tool:npm .
+
+tool:npm a schema:SoftwareApplication ;
+    schema:name "npm" .
+

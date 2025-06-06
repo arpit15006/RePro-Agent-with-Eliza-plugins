@@ -1,0 +1,620 @@
+{
+  "repository_url": "https://github.com/arpit15006/Monad-PingPong-Arena",
+  "repository_info": {
+    "platform": "GitHub",
+    "owner": "arpit15006",
+    "name": "Monad-PingPong-Arena",
+    "full_name": "arpit15006/Monad-PingPong-Arena"
+  },
+  "reproducibility_score": 0.2,
+  "analysis": {
+    "files": {
+      "total_files": 143,
+      "total_size": 2966519,
+      "file_types": {
+        ".json": 6,
+        ".html": 1,
+        ".lockb": 1,
+        ".md": 1,
+        ".ts": 12,
+        "": 13,
+        ".js": 2,
+        ".sol": 1,
+        ".ico": 1,
+        ".jpeg": 1,
+        ".txt": 1,
+        ".jpg": 1,
+        ".svg": 1,
+        ".tsx": 73,
+        ".css": 3,
+        ".sample": 13,
+        ".idx": 1,
+        ".pack": 1,
+        ".mp3": 10
+      },
+      "files": [
+        {
+          "path": "tsconfig.node.json",
+          "size": 481,
+          "extension": ".json"
+        },
+        {
+          "path": "index.html",
+          "size": 475,
+          "extension": ".html"
+        },
+        {
+          "path": "tsconfig.app.json",
+          "size": 652,
+          "extension": ".json"
+        },
+        {
+          "path": "bun.lockb",
+          "size": 198351,
+          "extension": ".lockb"
+        },
+        {
+          "path": "README.md",
+          "size": 6342,
+          "extension": ".md"
+        },
+        {
+          "path": "tailwind.config.ts",
+          "size": 3285,
+          "extension": ".ts"
+        },
+        {
+          "path": ".gitignore",
+          "size": 253,
+          "extension": ""
+        },
+        {
+          "path": "package-lock.json",
+          "size": 265755,
+          "extension": ".json"
+        },
+        {
+          "path": "package.json",
+          "size": 2838,
+          "extension": ".json"
+        },
+        {
+          "path": "components.json",
+          "size": 413,
+          "extension": ".json"
+        },
+        {
+          "path": "tsconfig.json",
+          "size": 381,
+          "extension": ".json"
+        },
+        {
+          "path": "eslint.config.js",
+          "size": 789,
+          "extension": ".js"
+        },
+        {
+          "path": "vite.config.ts",
+          "size": 471,
+          "extension": ".ts"
+        },
+        {
+          "path": "postcss.config.js",
+          "size": 80,
+          "extension": ".js"
+        },
+        {
+          "path": "contracts/PingPongGame.sol",
+          "size": 6512,
+          "extension": ".sol"
+        },
+        {
+          "path": "public/favicon.ico",
+          "size": 332094,
+          "extension": ".ico"
+        },
+        {
+          "path": "public/logo.jpeg",
+          "size": 326603,
+          "extension": ".jpeg"
+        },
+        {
+          "path": "public/robots.txt",
+          "size": 160,
+          "extension": ".txt"
+        },
+        {
+          "path": "public/mainimg.jpg",
+          "size": 332094,
+          "extension": ".jpg"
+        },
+        {
+          "path": "public/placeholder.svg",
+          "size": 3253,
+          "extension": ".svg"
+        },
+        {
+          "path": ".git/config",
+          "size": 322,
+          "extension": ""
+        },
+        {
+          "path": ".git/shallow",
+          "size": 41,
+          "extension": ""
+        },
+        {
+          "path": ".git/HEAD",
+          "size": 21,
+          "extension": ""
+        },
+        {
+          "path": ".git/description",
+          "size": 73,
+          "extension": ""
+        },
+        {
+          "path": ".git/index",
+          "size": 11036,
+          "extension": ""
+        },
+        {
+          "path": ".git/packed-refs",
+          "size": 112,
+          "extension": ""
+        },
+        {
+          "path": "src/App.tsx",
+          "size": 4280,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/main.tsx",
+          "size": 197,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/App.css",
+          "size": 606,
+          "extension": ".css"
+        },
+        {
+          "path": "src/index.css",
+          "size": 9106,
+          "extension": ".css"
+        },
+        {
+          "path": "src/vite-env.d.ts",
+          "size": 244,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/providers/WalletProvider.tsx",
+          "size": 6265,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/styles/enhanced-ui.css",
+          "size": 8702,
+          "extension": ".css"
+        },
+        {
+          "path": "src/components/SplashScreen.tsx",
+          "size": 4736,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/Dashboard.tsx",
+          "size": 9436,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/BotPongCanvas.tsx",
+          "size": 20587,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/NFTCard.tsx",
+          "size": 15270,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/MatchList.tsx",
+          "size": 7871,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/StatsCard.tsx",
+          "size": 3106,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/NFTMintForm.tsx",
+          "size": 23044,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/MultiplayerPongCanvas.tsx",
+          "size": 26968,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/PongCanvas.tsx",
+          "size": 31214,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/Navigation.tsx",
+          "size": 9485,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/hooks/use-mobile.tsx",
+          "size": 565,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/hooks/use-toast.ts",
+          "size": 3895,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/contract.ts",
+          "size": 65061,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "size": 166,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/types.ts",
+          "size": 2285,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/gameResults.ts",
+          "size": 1770,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/sounds.ts",
+          "size": 2151,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/gameConstants.ts",
+          "size": 2435,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/lib/animations.ts",
+          "size": 3506,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/pages/Index.tsx",
+          "size": 10077,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/Leaderboard.tsx",
+          "size": 11715,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/Dashboard.tsx",
+          "size": 1442,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/NFTMarketplace.tsx",
+          "size": 11234,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/History.tsx",
+          "size": 8370,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/PlayBot.tsx",
+          "size": 5555,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/Play.tsx",
+          "size": 28047,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/Multiplayer.tsx",
+          "size": 9846,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/NotFound.tsx",
+          "size": 1151,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/Admin.tsx",
+          "size": 33712,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/pages/About.tsx",
+          "size": 11579,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/aspect-ratio.tsx",
+          "size": 140,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "size": 4420,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/pagination.tsx",
+          "size": 2751,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "size": 1883,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/card.tsx",
+          "size": 1877,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/slider.tsx",
+          "size": 1092,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/popover.tsx",
+          "size": 1230,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/progress.tsx",
+          "size": 777,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/toaster.tsx",
+          "size": 772,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/input-otp.tsx",
+          "size": 2154,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/chart.tsx",
+          "size": 10466,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/hover-card.tsx",
+          "size": 1184,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/sheet.tsx",
+          "size": 4250,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "size": 1642,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/resizable.tsx",
+          "size": 1709,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "size": 710,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/sonner.tsx",
+          "size": 880,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/navigation-menu.tsx",
+          "size": 5046,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/accordion.tsx",
+          "size": 1977,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/drawer.tsx",
+          "size": 3007,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "size": 1145,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/alert.tsx",
+          "size": 1584,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/use-toast.ts",
+          "size": 82,
+          "extension": ".ts"
+        },
+        {
+          "path": "src/components/ui/switch.tsx",
+          "size": 1139,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/calendar.tsx",
+          "size": 2620,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "size": 2701,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "size": 1467,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/command.tsx",
+          "size": 4879,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/toggle-group.tsx",
+          "size": 1739,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "size": 1405,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/menubar.tsx",
+          "size": 7974,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "size": 3835,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "size": 1128,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "size": 23367,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/table.tsx",
+          "size": 2765,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/separator.tsx",
+          "size": 756,
+          "extension": ".tsx"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "size": 1901,
+          "extension": ".tsx"
+        }
+      ]
+    },
+    "structure": {
+      "total_directories": 27,
+      "directories": [
+        "contracts",
+        "public",
+        ".git",
+        "src",
+        "public/sounds",
+        ".git/objects",
+        ".git/info",
+        ".git/logs",
+        ".git/hooks",
+        ".git/refs",
+        "src/providers",
+        "src/styles",
+        "src/components",
+        "src/hooks",
+        "src/lib",
+        "src/pages",
+        "src/components/ui",
+        ".git/objects/pack",
+        ".git/objects/info",
+        ".git/logs/refs",
+        ".git/refs/heads",
+        ".git/refs/tags",
+        ".git/refs/remotes",
+        ".git/refs/remotes/origin",
+        ".git/logs/refs/heads",
+        ".git/logs/refs/remotes",
+        ".git/logs/refs/remotes/origin"
+      ],
+      "structure_score": 1.0
+    },
+    "documentation": {
+      "has_readme": true,
+      "has_license": false,
+      "documentation_files": [
+        "README.md"
+      ],
+      "documentation_score": 0.6
+    },
+    "dependencies": {
+      "has_dependencies": true,
+      "dependency_files": [
+        "package.json"
+      ],
+      "package_managers": [
+        "npm"
+      ],
+      "dependency_score": 0.3
+    },
+    "testing": {
+      "has_tests": false,
+      "test_files": [],
+      "test_frameworks": [],
+      "testing_score": 0.0
+    },
+    "containerization": {
+      "has_containerization": false,
+      "container_files": [],
+      "containerization_score": 0.0
+    },
+    "ci_cd": {
+      "has_ci_cd": false,
+      "ci_files": [],
+      "ci_cd_score": 0.0
+    },
+    "data": {
+      "has_data": false,
+      "data_files": [],
+      "data_directories": [],
+      "data_score": 0.0
+    }
+  },
+  "recommendations": [
+    "Add a license file to clarify usage rights",
+    "Add unit tests to verify code functionality",
+    "Consider adding Docker support for consistent environments",
+    "Set up continuous integration for automated testing",
+    "Include sample data or clear instructions for data acquisition"
+  ],
+  "assessment_date": "2025-06-06T11:46:22.228904"
+}

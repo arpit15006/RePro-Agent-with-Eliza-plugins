@@ -1,0 +1,24 @@
+@prefix author: <https://authors.org/> .
+@prefix paper: <https://papers.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix scientific: <https://scientific.org/> .
+
+paper:deep_learning_approaches_for_protein_structure_pre a schema:ScholarlyArticle ;
+    schema:abstract """Protein structure prediction remains one of the most challenging problems in computational biology. Recent advances in deep learning, particularly transformer architectures and graph neural networks, have shown remarkable progress in this domain. This study presents a comprehensive comparison of state-of-the-art deep learning methods for protein structure prediction, including AlphaFold2, ESMFold, and ChimeraX-AlphaFold. We evaluate these methods on a dataset of 1,000 protein structures from the Protein Data Bank (PDB) and analyze their performance across different protein families and structural complexities.
+
+**Keywords:** protein structure prediction, deep learning, transformer networks, graph neural networks, AlphaFold, computational biology""" ;
+    schema:author author:environmental_factors ;
+    schema:keywords "** protein structure prediction",
+        "AlphaFold",
+        "computational biology",
+        "deep learning",
+        "graph neural networks",
+        "transformer networks" ;
+    schema:name "Deep Learning Approaches for Protein Structure Prediction: A Comparative Analysis" ;
+    schema:url "temp_uploads/5639b493-9bb2-4397-8383-1585170fbd6a_test_paper.md" ;
+    scientific:hasMethodology [ a scientific:Methodology ;
+            schema:description "es for Protein Structure Prediction: A Comparative Analysis" ] .
+
+author:environmental_factors a schema:Person ;
+    schema:name "environmental factors" .
+

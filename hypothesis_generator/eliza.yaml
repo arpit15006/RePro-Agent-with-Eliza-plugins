@@ -1,0 +1,65 @@
+name: "hypothesis-generator"
+description: "Generates novel research hypotheses from knowledge graphs using AI-powered analysis"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "scientific-discovery"
+
+dependencies:
+  - "rdflib>=6.0.0"
+  - "google-generativeai>=0.3.0"
+  - "json"
+  - "logging"
+  - "pathlib"
+
+inputs:
+  - name: "graph_file"
+    type: "file"
+    description: "Knowledge graph file (Turtle or JSON format)"
+    required: true
+  - name: "num_hypotheses"
+    type: "integer"
+    description: "Number of hypotheses to generate"
+    default: 5
+    required: false
+  - name: "focus_area"
+    type: "string"
+    description: "Research focus area for hypothesis generation"
+    required: false
+  - name: "api_key"
+    type: "string"
+    description: "API key for AI services (optional)"
+    required: false
+  - name: "model"
+    type: "string"
+    description: "AI model to use for generation"
+    default: "gemini-pro"
+    required: false
+
+outputs:
+  - name: "hypotheses"
+    type: "json"
+    description: "Generated research hypotheses with scoring and metadata"
+  - name: "research_directions"
+    type: "array"
+    description: "Suggested research directions"
+  - name: "knowledge_gaps"
+    type: "array"
+    description: "Identified knowledge gaps"
+
+capabilities:
+  - "Knowledge graph analysis"
+  - "AI-powered hypothesis generation"
+  - "Research gap identification"
+  - "Novelty scoring"
+  - "Feasibility assessment"
+
+usage_example: |
+  python main.py --graph knowledge_graph.ttl --output hypotheses.json --num-hypotheses 5 --focus-area "protein structure"
+
+tags:
+  - "hypothesis-generation"
+  - "scientific-discovery"
+  - "ai-research"
+  - "knowledge-graphs"

@@ -1,0 +1,14 @@
+{
+  "pipeline": "RePRO-Agent",
+  "version": "0.1.0",
+  "execution_timestamp": "2025-06-06T11:46:22.418515",
+  "output_files": {
+    "reproducibility_file": "analysis_results/8433d4cf-b839-42a4-b9d1-6a9d9a748a34/reproducibility_report.json",
+    "graph_file": "analysis_results/8433d4cf-b839-42a4-b9d1-6a9d9a748a34/knowledge_graph.ttl",
+    "hypotheses_file": "analysis_results/8433d4cf-b839-42a4-b9d1-6a9d9a748a34/hypotheses.json"
+  },
+  "description": "Complete scientific reproducibility assessment and hypothesis generation pipeline",
+  "reproducibility_file_size": 14814,
+  "graph_file_size": 1221,
+  "hypotheses_file_size": 3503
+}

@@ -1,0 +1,55 @@
+name: "hypothesis-generator"
+description: "Generates novel research hypotheses using knowledge graph analysis and LLM reasoning"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "hypothesis-generation"
+tags:
+  - "hypothesis-generation"
+  - "research-insights"
+  - "knowledge-graph"
+  - "sparql"
+  - "llm"
+
+inputs:
+  - name: "graph_file"
+    type: "string"
+    description: "Path to RDF knowledge graph file"
+    required: true
+  - name: "output_path"
+    type: "string"
+    description: "Path for the output hypotheses file"
+    required: false
+    default: "hypotheses.json"
+  - name: "num_hypotheses"
+    type: "integer"
+    description: "Number of hypotheses to generate"
+    required: false
+    default: 5
+  - name: "focus_area"
+    type: "string"
+    description: "Optional focus area for hypothesis generation"
+    required: false
+
+outputs:
+  - name: "hypotheses"
+    type: "json"
+    description: "Generated research hypotheses with supporting evidence"
+
+dependencies:
+  - "rdflib>=6.0.0"
+  - "SPARQLWrapper>=2.0.0"
+  - "openai>=1.0.0"
+  - "anthropic>=0.7.0"
+  - "requests>=2.31.0"
+  - "python-dotenv>=1.0.0"
+  - "networkx>=3.0"
+
+environment_variables:
+  - name: "OPENAI_API_KEY"
+    description: "OpenAI API key for GPT models"
+    required: false
+  - name: "ANTHROPIC_API_KEY"
+    description: "Anthropic API key for Claude models"
+    required: false
