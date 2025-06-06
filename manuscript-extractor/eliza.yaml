@@ -1,0 +1,44 @@
+name: "manuscript-extractor"
+description: "Extracts structured metadata from scientific papers in PDF or Markdown format"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "data-extraction"
+tags:
+  - "scientific-papers"
+  - "metadata-extraction"
+  - "json-ld"
+  - "pdf-processing"
+
+inputs:
+  - name: "paper_path"
+    type: "string"
+    description: "Path to the scientific paper (PDF or Markdown)"
+    required: true
+  - name: "output_path"
+    type: "string"
+    description: "Path for the output JSON-LD file"
+    required: false
+    default: "metadata.json"
+
+outputs:
+  - name: "metadata"
+    type: "json-ld"
+    description: "Structured metadata extracted from the paper"
+
+dependencies:
+  - "PyMuPDF>=1.23.0"
+  - "openai>=1.0.0"
+  - "anthropic>=0.7.0"
+  - "requests>=2.31.0"
+  - "python-dotenv>=1.0.0"
+  - "unstructured[pdf]>=0.10.0"
+
+environment_variables:
+  - name: "OPENAI_API_KEY"
+    description: "OpenAI API key for GPT models"
+    required: false
+  - name: "ANTHROPIC_API_KEY"
+    description: "Anthropic API key for Claude models"
+    required: false

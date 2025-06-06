@@ -1,0 +1,49 @@
+name: "reproducibility-assistant"
+description: "Assesses the reproducibility of scientific code repositories and validates research outputs"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "reproducibility"
+tags:
+  - "reproducibility"
+  - "code-validation"
+  - "docker"
+  - "scientific-computing"
+
+inputs:
+  - name: "repo_url"
+    type: "string"
+    description: "GitHub repository URL to assess"
+    required: true
+  - name: "output_path"
+    type: "string"
+    description: "Path for the output reproducibility report"
+    required: false
+    default: "reproducibility_report.json"
+  - name: "timeout"
+    type: "integer"
+    description: "Timeout for code execution in seconds"
+    required: false
+    default: 300
+
+outputs:
+  - name: "reproducibility_score"
+    type: "float"
+    description: "Reproducibility score from 0.0 to 1.0"
+  - name: "report"
+    type: "json"
+    description: "Detailed reproducibility assessment report"
+
+dependencies:
+  - "GitPython>=3.1.0"
+  - "docker>=6.0.0"
+  - "requests>=2.31.0"
+  - "PyYAML>=6.0"
+  - "pipreqs>=0.4.0"
+  - "subprocess32>=3.5.0"
+
+environment_variables:
+  - name: "DOCKER_HOST"
+    description: "Docker daemon host (optional)"
+    required: false

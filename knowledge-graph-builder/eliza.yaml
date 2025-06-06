@@ -1,0 +1,48 @@
+name: "knowledge-graph-builder"
+description: "Builds RDF knowledge graphs from scientific metadata and reproducibility assessments"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "knowledge-graph"
+tags:
+  - "knowledge-graph"
+  - "rdf"
+  - "semantic-web"
+  - "scientific-data"
+
+inputs:
+  - name: "metadata_file"
+    type: "string"
+    description: "Path to JSON-LD metadata file from manuscript extractor"
+    required: false
+  - name: "reproducibility_file"
+    type: "string"
+    description: "Path to reproducibility report JSON file"
+    required: false
+  - name: "output_format"
+    type: "string"
+    description: "Output format: turtle, ntriples, rdfxml, jsonld"
+    required: false
+    default: "turtle"
+  - name: "output_path"
+    type: "string"
+    description: "Path for the output knowledge graph file"
+    required: false
+    default: "knowledge_graph.ttl"
+
+outputs:
+  - name: "knowledge_graph"
+    type: "rdf"
+    description: "RDF knowledge graph in specified format"
+
+dependencies:
+  - "rdflib>=6.0.0"
+  - "SPARQLWrapper>=2.0.0"
+  - "requests>=2.31.0"
+  - "python-dateutil>=2.8.0"
+
+environment_variables:
+  - name: "SPARQL_ENDPOINT"
+    description: "Optional SPARQL endpoint for remote graph storage"
+    required: false

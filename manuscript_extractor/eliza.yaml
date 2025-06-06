@@ -1,0 +1,53 @@
+name: "manuscript-extractor"
+description: "Extracts structured metadata from scientific papers including methods, datasets, results, and tools used"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "scientific-analysis"
+
+dependencies:
+  - "PyPDF2>=3.0.0"
+  - "google-generativeai>=0.3.0"
+  - "pathlib"
+  - "json"
+  - "logging"
+
+inputs:
+  - name: "paper_file"
+    type: "file"
+    description: "Scientific paper in PDF or Markdown format"
+    required: true
+  - name: "api_key"
+    type: "string"
+    description: "API key for AI services (optional)"
+    required: false
+  - name: "model"
+    type: "string"
+    description: "AI model to use for extraction"
+    default: "gemini-pro"
+    required: false
+
+outputs:
+  - name: "metadata"
+    type: "json"
+    description: "Structured metadata including title, abstract, authors, methods, results"
+  - name: "extraction_status"
+    type: "string"
+    description: "Status of the extraction process"
+
+capabilities:
+  - "PDF text extraction"
+  - "Markdown parsing"
+  - "AI-powered metadata extraction"
+  - "Scientific paper analysis"
+  - "Structured data output"
+
+usage_example: |
+  python main.py --input paper.pdf --output metadata.json --model gemini-pro
+
+tags:
+  - "scientific-research"
+  - "metadata-extraction"
+  - "pdf-processing"
+  - "ai-analysis"

@@ -1,0 +1,53 @@
+name: "reproducibility-assistant"
+description: "Analyzes GitHub repositories for scientific reproducibility and generates reproducibility scores"
+author: "RePRO-Agent Team"
+language: "python"
+entry_point: "main.py"
+version: "0.1.0"
+category: "scientific-validation"
+
+dependencies:
+  - "requests>=2.28.0"
+  - "subprocess"
+  - "pathlib"
+  - "json"
+  - "logging"
+  - "tempfile"
+
+inputs:
+  - name: "repo_url"
+    type: "string"
+    description: "GitHub repository URL to analyze"
+    required: true
+  - name: "timeout"
+    type: "integer"
+    description: "Timeout in seconds for analysis"
+    default: 300
+    required: false
+
+outputs:
+  - name: "reproducibility_score"
+    type: "float"
+    description: "Reproducibility score from 0.0 to 1.0"
+  - name: "assessment_report"
+    type: "json"
+    description: "Detailed assessment including issues and recommendations"
+  - name: "file_analysis"
+    type: "json"
+    description: "Analysis of repository files and structure"
+
+capabilities:
+  - "Repository cloning and analysis"
+  - "Dependency detection"
+  - "Documentation assessment"
+  - "Code structure evaluation"
+  - "Reproducibility scoring"
+
+usage_example: |
+  python main.py --repo https://github.com/user/repo --output report.json --timeout 300
+
+tags:
+  - "reproducibility"
+  - "github-analysis"
+  - "code-validation"
+  - "scientific-software"
